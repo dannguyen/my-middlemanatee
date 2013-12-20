@@ -1,5 +1,5 @@
-Copyright 2013 Nick Donohue
-https://www.github.com/headcanon
+Copyright 2013 Dan Nguyen
+https://www.github.com/dannguyen
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
