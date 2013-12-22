@@ -1,0 +1,16 @@
+source "https://rubygems.org"
+
+gem "middleman", "~>3.2"
+
+gem "json", '~> 1.7.7'
+
+gem "middleman-favicon-maker"
+gem "middleman-livereload"
+gem "middleman-sync", "~> 3.0.12"
+gem "middleman-syntax"
+
+
+gem "activesupport", require: 'active_support/all'
+gem "kramdown"
+gem "slim"
+gem 'coderay'
