@@ -1,4 +1,5 @@
 require 'slim'
+
 set :encoding, "utf-8"
 
 I18n.enforce_available_locales = true

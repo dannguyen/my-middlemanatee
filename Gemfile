@@ -11,7 +11,7 @@ gem "middleman-syntax"
 gem 'bootstrap-sass', '~> 3.0.3.0'
 
 
-gem "activesupport", require: 'active_support/all'
+gem "activesupport"
 gem "kramdown"
 gem "slim"
 gem 'coderay'
