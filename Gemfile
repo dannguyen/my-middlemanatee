@@ -8,6 +8,7 @@ gem "middleman-favicon-maker"
 gem "middleman-livereload"
 gem "middleman-sync", "~> 3.0.12"
 gem "middleman-syntax"
+gem 'bootstrap-sass', '~> 3.0.3.0'
 
 
 gem "activesupport", require: 'active_support/all'

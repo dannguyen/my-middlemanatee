@@ -1,11 +1,12 @@
 @charset "utf-8";
 
-@import "settings";
 @import "imports";
 @import "woz";
+@import "settings";
 
 
 body {
   background: $backgroundColor;
   color: $textColor;
+  padding-top: $fixed-nav-padding;
 }

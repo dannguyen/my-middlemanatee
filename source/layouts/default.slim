@@ -6,7 +6,7 @@ html class="no-js"
     meta name="description" content=page_description
     meta name="keywords" content=page_keywords
 
-    title WaryWorld
+    title Middlemanatee
 
     = stylesheet_link_tag 'all'
     = javascript_include_tag 'vendor/modernizr'
@@ -21,10 +21,13 @@ html class="no-js"
     <!--[if lt IE 8]> 
       = partial "partials/layout/compatibility-notice" 
     <![endif]-->
-    = partial "partials/layout/header"
+
+    = partial "partials/layout/header" unless @hide_nav
 
     div class="container"    
       = yield    
+
+
 
     = partial "partials/layout/footer"
 

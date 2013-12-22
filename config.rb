@@ -27,6 +27,22 @@ end
 
 
 ###
+# Page options, layouts, aliases and proxies
+###
+
+
+
+set :layout, :page
+
+page "/", :layout => :home do 
+  @hide_nav = true
+end
+
+
+
+
+
+###
 # Compass
 ###
 
@@ -35,9 +51,6 @@ end
 #   config.output_style = :compact
 # end
 
-###
-# Page options, layouts, aliases and proxies
-###
 
 # Per-page layout changes:
 #

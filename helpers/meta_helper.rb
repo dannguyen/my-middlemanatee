@@ -1,5 +1,5 @@
 def page_title
-  title = "Middleman" #Set site title here
+  title = "MiddleManatee" #Set site title here
 
   if data.page.title
     title << " | " + data.page.title
@@ -22,8 +22,10 @@ def page_keywords
   keywords = [] # Set site keywords here
 
   if data.page.keywords
-    keywords.concat(dat.page.keywords)
+    keywords.concat(data.page.keywords)
   end
 
   keywords.uniq.join(", ")
 end
+
+
