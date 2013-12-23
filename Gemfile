@@ -7,6 +7,7 @@ gem "json", '~> 1.7.7'
 gem "middleman-favicon-maker"
 gem "middleman-livereload"
 gem "middleman-sync"
+gem "middleman-s3_sync"
 gem "middleman-syntax"
 gem 'bootstrap-sass', '~> 3.0.3.0'
 

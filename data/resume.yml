@@ -1,12 +1,13 @@
 meta:
   name: Dan Nguyen
   email: dan@danwin.com
-  url: http://a.danwin.com  
+  url: http://a.danwin.com
+  twitter: dancow
   address:
     street: 343 E 9th Street Apt. 4
     city: New York
     state: NY
-    zip: 10003
+    postal: 10003
   phone: "(319)-621-2750"
 statement: "My education and career has combined both traditional print reporting"
 sections:
@@ -18,6 +19,10 @@ sections:
           dates:
             start: 2012-09
             end: Present
+          desc: |
+            My role was to conceive and develop data products, including front-facing applications for business users and
+            data tools for internal research. I also hired two developers and managed our technology stack and 
+            best practices.
           points:
             - Hired and managed 2 developers and all technical considerations.
             - Decided on technology solutions and chose vendors
@@ -27,6 +32,11 @@ sections:
           dates:
             start: 2013-09
             end: 2013-12
+          desc: |
+            I taught an introduction to data journalism class to a small group of students, none of whom had a strong 
+            technical background. TK TK. I built a 
+            [custom class website for materials and readings](http://www.smalldatajournalism.com), TK.
+
           points:
             - Led first data journalism class in the Humanities department for J certificate
             - Created class website that was used by journalists etc worldwide
@@ -54,6 +64,8 @@ sections:
       desc: I do both engineering and writing
       sections:
         - title: Application Development
+          sec_size: primary
+          icon_class: 'fa fa-desktop'
           items:
             - title: Ruby on Rails
               desc: | 
@@ -74,6 +86,7 @@ sections:
               desc: | 
                   Built custom interactive news sites, including a crime mapper, and currently use it to maintain WordPress sites.
         - title: Design and Multimedia
+          icon_class: 'fa fa-camera-retro'
           items:
             - title: HTML
               desc: | 
@@ -87,6 +100,22 @@ sections:
             - title: Photo Editing
               desc: | 
                   Primarily Adobe software, including Photoshop and Lightroom
+        - title: Teaching
+          icon_class: 'fa fa-bookmark'
+          items:
+            - title: Programming
+              desc: |
+                  Taught the first "Learn to Code" session at General Assembly in New York, as well as a session at Online News Association.
+                  The "Bastards Book of Ruby" has been viewed XTK times
+            - title: Data Journalism
+              desc: | 
+                  Taught NYU-SCPS first Data Journalism class and built an instruction website and tutorials
+            - title: Data and Tech Skills
+              desc: |
+                  Taught general data concepts, such as data cleaning and web inspection to journalism
+            - title: Photography
+              desc: |
+                  Released the Bastards Book of Photography, a primer of basic photography skills with manual cameras.
     teaching:
       title: Teaching Experience
       items:

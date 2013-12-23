@@ -12,16 +12,23 @@ layout: page
 div class="resume"
   div class="meta"
     address class="vcard"
-      p = meta.name
-      p Address
-      ul
-        - address = meta.address
-        li = address.street
-        li = address.city
-        li = address.state
-        li = address.postal
-
-
+      - address = meta.address
+      ul class="list-unstyled list-inline list-iconized"
+        li class="address"
+          span class="fa fa-envelope"
+          => [address.street, address.city, address.state, address.postal].join(', ')
+        li class="phone"
+          span class="fa fa-phone"
+          => meta.phone
+        li class="email" 
+          span class="fa fa-inbox"
+          => link_to meta.email, "mailto:#{meta.email}"
+        li class="twitter"
+          span class=" fa fa-twitter"
+          => link_to "@#{meta.twitter}", "//twitter.com/#{meta.twitter}"
+        li class="homepage" 
+          span class="fa fa-rss"
+          => link_to 'danwin.com', meta.url
 
   div class="sections"
     - sections = resume.sections  
@@ -37,9 +44,8 @@ div class="resume"
               h3 class="title" = i.title
               h5 class="company" = i.company
               div class="dates" #{{friendly_date i.dates.start}} to #{{friendly_date i.dates.end}}
-              ul class="points"
-                - i.points.andand.each do |point|
-                  li = point
+              div class="desc" = Kramdown::Document.new(i.desc).to_html
+        
 
 
     - sections = resume.sections  
@@ -48,13 +54,29 @@ div class="resume"
       - s = sections.skills
 
       h2 Skills and Experience
-      - s.sections.each do |skill_sec|
-        section class="skill-group"
-          h3 = skill_sec.title
+      div class="row"
+        div class="col-md-6"
+          - skill_sec = s.sections.first
+          section class="skill-group"
+          h3 
+            span class="#{{skill_sec.icon_class}}"
+            =< skill_sec.title
           - skill_sec.items.each do |i|
             div class="skill"
-              h5 class="title" = i.title
-              div class="desc" = i.desc
+              p 
+                strong class="title" => "#{i.title} &ndash;"
+                =< i.desc
+        div class="col-md-6"
+          - s.sections[1..-1].each do |skill_sec|
+            section class="skill-group"
+            h3 
+              span class="#{{skill_sec.icon_class}}"
+              =< skill_sec.title
+            - skill_sec.items.each do |i|
+              div class="skill"
+                p 
+                  strong class="title" => "#{i.title} &ndash;"
+                  =< i.desc
 
 
 
