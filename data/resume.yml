@@ -1,0 +1,103 @@
+meta:
+  name: Dan Nguyen
+  email: dan@danwin.com
+  url: http://a.danwin.com  
+  address:
+    street: 343 E 9th Street Apt. 4
+    city: New York
+    state: NY
+    zip: 10003
+  phone: "(319)-621-2750"
+statement: | My education and career has combined both traditional print reporting
+sections:
+    employment:
+      title: Employment history
+      items:
+        - title: Head of Data
+          company: Skift
+          dates:
+            start: 2012-09
+            end: Present
+          points:
+            - Hired and managed 2 developers and all technical considerations.
+            - Decided on technology solutions and chose vendors
+            - "Built internal development infrastructure, including testing suites, style"
+        - title: Adjunct Instructor in Data Journalism
+          company: "New York University, School of Contiuing Studies TK"
+          dates:
+            start: 2013-09
+            end: 2013-12
+          points:
+            - Led first data journalism class in the Humanities department for J certificate
+            - Created class website that was used by journalists etc worldwide
+            - Created walkthroughs
+            - Taught data principles including cleaning visualizations etc
+        - title: News Application Developer
+          company: ProPublica
+          dates:
+            start: 2008-08
+            end: 2012-09
+          desc: | I was the primary programmer and designer for ProPublica's most visited and well-known news applications, including the award winning Dollars for Docs, SOPA Opera, and the Bailout Tracker.
+        - title: Reporter and Developer
+          company: The Sacramento Bee
+          desc: | My roles included covering education and local government, helping to create the online multimedia department, producing interactive features in Flash, and writing data- the investigative projects team.
+          dates:
+            start: 2005-06
+            end: 2008-07
+          points:
+            - Covered small cities
+            - Joined multimedia department
+
+    skills:
+      title: Technical Skills
+      desc: I do both engineering and writing
+      sections:
+        - title: Application Development
+          items:
+            - title: Ruby on Rails
+              desc: | Built award-winning in-depth news projects that have attracted millions of users.
+            - title: Databases
+              desc: | Includes MySQL, SQLite, MongoDB, and Access to power data-heavy websites and to perform large data-mining operations.
+            - title: JavaScript
+              desc: | Designed user interfaces and data visualizations with a variety of libraries, including jQuery, D3, Highcharts, and AngularJS
+            - title: Code and project management
+              desc: | Includes daily use of git for tracking personal and professional projects, Github for open-source contributions, RSpec and Jasmine for test-driven development
+            - title: System Operations
+              desc: | Deployed, secured, and maintained web sites both on hosted platforms and custom cloud servers.
+            - title: PHP
+              desc: | Built custom interactive news sites, including a crime mapper, and currently use it to maintain WordPress sites.
+        - title: Design and Multimedia
+          items:
+            - title: HTML
+              desc: | Includes experience in popular frameworks, such as Bootstrap and Zerb, and alternative markup languages, e.g. Haml, Slim, and Markdown
+            - title: CSS
+              desc: | Includes popular extension frameworks, e.g. Sass/Compass and LESS
+            - title: Photography
+              desc: | For news stories, sports events, weddings, and NY Fashion Week events. Have also published online how-to guides.
+            - title: Photo Editing
+              desc: | Primarily Adobe software, including Photoshop and Lightroom
+    teaching:
+      title: Teaching Experience
+        items:
+          - Ruby programming classes at General Assembly and Online News Association
+          - Data Journalism at NYU-SCPS
+          - General data concepts and technical lessons with National Institute of Computer Assisted Reporters
+          - | The "Bastards Books of Ruby, Photography and Regular Expressions" online, indepth guides that have been visited by hundreds of thousands of readers   
+    education:
+      title: Education
+      items:
+        - title: Iowa State University
+          degree: B.A. in Print Journalism and B.S. in Computer Engineering
+          dates:
+            start: 1999
+            end: 2004
+    references:
+      items:
+        - name: Charles Ornstein
+        - name: Scott Klein
+        - name: Amy Pyle
+
+
+
+
+
