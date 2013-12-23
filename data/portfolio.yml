@@ -1,0 +1,63 @@
+works:
+  - title: Dollars For Docs
+    url: http://projects.propublica.org/docdollars
+    place:
+      name: ProPublica
+      url: http://www.propublica.org
+    date: 2010-10
+    deck: "A large wide scale investigation into the financial ties between doctors and drug companies"
+    desc: "My largest data journalism project and multi-faceted"
+    image_url: //placekitten.com/400/600
+    highlights:
+      - title: Nerd Guides
+        url: //example.com
+        desc: |
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, suscipit, eligendi, quia nam porro veniam tempora quae atque quisquam vel quaerat saepe magnam a soluta ex fugiat repellat tenetur non!
+      - title: Nationwide data-mining
+        url: //example.com
+        desc: |
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quasi, quam nam recusandae distinctio voluptas debitis facere. Vero, magni totam aspernatur ipsum ipsam accusantium nam dolore assumenda omnis quas neque.
+      - title: Nationwide crowd-sourcing
+        url: //example.com
+        image:
+          url: //placekitten.com/300/200
+          width: 200
+        desc: |
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ab, consectetur tempore ducimus porro deleniti ratione voluptatum a aperiam possimus quam nulla id dolor quis reiciendis rem rerum veritatis molestias.
+      - title: Data refinement techniques
+        url: //example.com
+        desc: |
+          Lorem amet, consectetur adipisicing elit. Beatae, quasi, quam nam recusandae 
+  - title: Small Data Journalism
+    url: http://www.smalldatajournalism.com
+    place:
+      name: "New York University, SCPS"
+      url: http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787
+    date: 2013-09
+    deck: "A large wide scale investigation into the financial ties between doctors and drug companies"
+    desc: "My Class Website"
+    image_url: //placekitten.com/400/680
+    highlights:
+      - title: Suggested Readings List
+        url: http://www.smalldatajournalism.com/readings/
+        desc: |
+          My favorite and most inspirational data related guides, quia nam porro veniam tempora quae atque quisquam vel quaerat saepe magnam a soluta ex fugiat repellat tenetur non!
+        image:
+          url: //placekitten.com/250/180
+      - title: Publishing a static website on Amazon S3
+        url: http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/
+        desc: |
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quasi, quam nam recusandae distinctio voluptas debitis facere. Vero, magni totam aspernatur ipsum ipsam accusantium nam dolore assumenda omnis quas neque.
+        image:
+          url: //placekitten.com/300/200
+      - title: Mashing and Mapping Data with Google Spreadsheets and Fusion Tables
+        url: http://www.smalldatajournalism.com/projects/one-offs/mapping-with-fusion-tables/
+        image:
+          url: //placekitten.com/300/200
+          width: 200
+        desc: |
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ab, consectetur tempore ducimus porro deleniti ratione voluptatum a aperiam possimus quam nulla id dolor quis reiciendis rem rerum veritatis molestias.
+      - title: Five Disciplines of Data Journalism
+        url: http://www.smalldatajournalism.com/about/
+        desc: |
+          Lorem amet, consectetur adipisicing elit. Beatae, quasi, quam nam recusandae 

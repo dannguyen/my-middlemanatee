@@ -20,6 +20,7 @@ div class="resume"
         li class="phone"
           span class="fa fa-phone"
           => meta.phone
+      ul class="list-unstyled list-inline list-iconized"
         li class="email" 
           span class="fa fa-inbox"
           => link_to meta.email, "mailto:#{meta.email}"
@@ -44,7 +45,7 @@ div class="resume"
               h3 class="title" = i.title
               h5 class="company" = i.company
               div class="dates" #{{friendly_date i.dates.start}} to #{{friendly_date i.dates.end}}
-              div class="desc" = Kramdown::Document.new(i.desc).to_html
+              div class="desc" = make_markdown(i.desc)
         
 
 

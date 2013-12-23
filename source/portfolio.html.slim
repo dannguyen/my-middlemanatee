@@ -1,0 +1,15 @@
+---
+layout: page
+title: Portfolio
+---
+
+
+Hello
+
+div class="lede imgwrap"
+  = image_tag("//placekitten.com/960/300")
+
+  - data.portfolio.works.each do |port_item|
+  	= partial "partials/content/portfolio-item", locals: {item: port_item}
+
+

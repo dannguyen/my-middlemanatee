@@ -1,3 +1,23 @@
+.deck{
+	text-align: center;
+	font-size: 20px;
+	font-family: $font-family-serif;
+	color: #666;
+}
+
+.imgwrap img{
+	width: 100%;
+}
+
+@media(min-width: $screen-md-min){		
+	.fRight{
+		float: right;
+		margin: 0 0 10px 10px;
+	}
+}
+
+
+
 header.woz{
   background: #24242a;
   color: white;
@@ -13,7 +33,7 @@ footer.woz{
   padding-top: 6em;
   padding-bottom: 10em;
 	
-	border-top: thin solid #aaa;
+	border-top: thin solid #b3aaa9;
   h4{
   	display: inline;
   	font-size: 16px;
@@ -45,29 +65,47 @@ h1.title{
 	cursor: pointer;
 
 	&.active{
-		background-color: #eef;			
+		background-color: #fff;			
 
 	}
 }
 
-.homepage{
 
+#affix-sidebar{
+	display: none;
+
+	@media(min-width: 1300px){
+	    position: fixed;
+	    display: block;
+	    top: 100;
+	    width: 180px;
+	    border: thin solid #999;
+			left: 10;
+
+			li.active, a.active{
+				color: green;
+			}
+	 }
+
+}
+
+
+.homepage{
 	.banner{
+		text-align: center;
 		h1{ font-family: $font-family-serif;}
 		h2{ font-family: $font-family-display;}
 	}
 	
-
-
 	.well{
 		background: none;
 		border: none;
-		height: 280px;
+		
 	}
 
-	@media (min-width: $screen-md-min) {
+	@media (min-width: $screen-sm-min) {
 		.banner{
-			text-align: center;
+			
 			margin-bottom: 4.2em;
 			
 /*			color: white;
@@ -84,6 +122,11 @@ h1.title{
 				font-size: 90px;
 			}
 		}
+
+	.well{
+		height: 280px;
+	}
+
 	}
 }
 
@@ -94,6 +137,8 @@ h1.title{
 			font-size: 34px;		
 		}
 	}
+
+	.vcard{ text-align: center;}
 
 	h3{
 		font-size: 22px; 
@@ -127,6 +172,31 @@ h1.title{
 	li{
 		margin-right: 12px;
 
+	}
+
+}
+
+
+.serif{
+	font-family: $font-family-serif;
+}
+
+.work{
+	margin-bottom: 4.0em;
+	border-top: thin solid #999;
+	padding-top: 1.5em;
+
+	h2.title{
+		font-size: 45px;
+	}
+
+	h4{
+		margin-top: 0px;
+	}
+
+
+	.meta{
+		margin-bottom: 1.5em;
 	}
 
 }

@@ -1,0 +1,43 @@
+section class="work"
+  h2 class="title" = item.title
+
+
+  div class="row"
+    div class="col-sm-8"
+      div class="meta"    
+        - if item.place
+            => link_to item.place.name, item.place.url
+        ' |
+        - if item.date
+            span =< friendly_date item.date
+
+        div class="source"
+          strong Homepage: 
+          = link_to item.url, item.url
+
+
+      div class="desc serif"
+        = make_markdown item.desc
+        = make_markdown lorem.paragraphs(3)
+
+    div class="col-sm-4"
+      div class="imgwrap"
+        = image_tag item.image_url
+
+  - if item.highlights
+
+    div class='highlights'
+      h3 Highlights
+      div class="row isotoper"
+        - item.highlights.each do |highlight|      
+          div class="col-sm-6"
+            div class="item"
+              h4 = link_to highlight.title, highlight.url
+              - if image = highlight.image
+                div class="fRight" style="#{"width: #{image.width}" if image.width}"
+                  div class="imgwrap"
+                    = image_tag highlight.image.url
+              div                    
+                = make_markdown highlight.desc
+
+              
