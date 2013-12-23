@@ -8,7 +8,7 @@ meta:
     state: NY
     zip: 10003
   phone: "(319)-621-2750"
-statement: | My education and career has combined both traditional print reporting
+statement: "My education and career has combined both traditional print reporting"
 sections:
     employment:
       title: Employment history
@@ -37,10 +37,11 @@ sections:
           dates:
             start: 2008-08
             end: 2012-09
-          desc: | I was the primary programmer and designer for ProPublica's most visited and well-known news applications, including the award winning Dollars for Docs, SOPA Opera, and the Bailout Tracker.
+          desc: "I was the primary programmer and designer for ProPublica's most visited and well-known news applications, including the award winning Dollars for Docs, SOPA Opera, and the Bailout Tracker."
         - title: Reporter and Developer
           company: The Sacramento Bee
-          desc: | My roles included covering education and local government, helping to create the online multimedia department, producing interactive features in Flash, and writing data- the investigative projects team.
+          desc: | 
+            My roles included covering education and local government, helping to create the online multimedia department, producing interactive features in Flash, and writing data- the investigative projects team.
           dates:
             start: 2005-06
             end: 2008-07
@@ -55,34 +56,44 @@ sections:
         - title: Application Development
           items:
             - title: Ruby on Rails
-              desc: | Built award-winning in-depth news projects that have attracted millions of users.
+              desc: | 
+                  Built award-winning in-depth news projects that have attracted millions of users.
             - title: Databases
-              desc: | Includes MySQL, SQLite, MongoDB, and Access to power data-heavy websites and to perform large data-mining operations.
+              desc: | 
+                  Includes MySQL, SQLite, MongoDB, and Access to power data-heavy websites and to perform large data-mining operations.
             - title: JavaScript
-              desc: | Designed user interfaces and data visualizations with a variety of libraries, including jQuery, D3, Highcharts, and AngularJS
+              desc: | 
+                  Designed user interfaces and data visualizations with a variety of libraries, including jQuery, D3, Highcharts, and AngularJS
             - title: Code and project management
-              desc: | Includes daily use of git for tracking personal and professional projects, Github for open-source contributions, RSpec and Jasmine for test-driven development
+              desc: | 
+                  Includes daily use of git for tracking personal and professional projects, Github for open-source contributions, RSpec and Jasmine for test-driven development
             - title: System Operations
-              desc: | Deployed, secured, and maintained web sites both on hosted platforms and custom cloud servers.
+              desc: | 
+                  Deployed, secured, and maintained web sites both on hosted platforms and custom cloud servers.
             - title: PHP
-              desc: | Built custom interactive news sites, including a crime mapper, and currently use it to maintain WordPress sites.
+              desc: | 
+                  Built custom interactive news sites, including a crime mapper, and currently use it to maintain WordPress sites.
         - title: Design and Multimedia
           items:
             - title: HTML
-              desc: | Includes experience in popular frameworks, such as Bootstrap and Zerb, and alternative markup languages, e.g. Haml, Slim, and Markdown
+              desc: | 
+                  Includes experience in popular frameworks, such as Bootstrap and Zerb, and alternative markup languages, e.g. Haml, Slim, and Markdown
             - title: CSS
-              desc: | Includes popular extension frameworks, e.g. Sass/Compass and LESS
+              desc: | 
+                  Includes popular extension frameworks, e.g. Sass/Compass and LESS
             - title: Photography
-              desc: | For news stories, sports events, weddings, and NY Fashion Week events. Have also published online how-to guides.
+              desc: | 
+                  For news stories, sports events, weddings, and NY Fashion Week events. Have also published online how-to guides.
             - title: Photo Editing
-              desc: | Primarily Adobe software, including Photoshop and Lightroom
+              desc: | 
+                  Primarily Adobe software, including Photoshop and Lightroom
     teaching:
       title: Teaching Experience
-        items:
-          - Ruby programming classes at General Assembly and Online News Association
-          - Data Journalism at NYU-SCPS
-          - General data concepts and technical lessons with National Institute of Computer Assisted Reporters
-          - | The "Bastards Books of Ruby, Photography and Regular Expressions" online, indepth guides that have been visited by hundreds of thousands of readers   
+      items:
+        - Ruby programming classes at General Assembly and Online News Association
+        - Data Journalism at NYU-SCPS
+        - General data concepts and technical lessons with National Institute of Computer Assisted Reporters
+        - 'The "Bastards Books of Ruby, Photography and Regular Expressions" online, indepth guides that have been visited by hundreds of thousands of readers   '
     education:
       title: Education
       items:

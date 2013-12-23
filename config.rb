@@ -16,15 +16,14 @@ activate :directory_indexes
 # Activate sync extension
 activate :sync do |sync|
   sync.fog_provider = 'AWS' # Your storage provider
-  sync.fog_directory = 'yourbucket' # Your bucket name
+  sync.fog_directory = 'a.danwin.com' # Your bucket name
   sync.fog_region = 'us-east-1' # The region your storage bucket is in (eg us-east-1, us-west-1, eu-west-1, ap-southeast-1 )
-  sync.aws_access_key_id = '###' # Your Amazon S3 access key
-  sync.aws_secret_access_key = '###' # Your Amazon S3 access secret
+  sync.aws_access_key_id = 'AKIAJM7O5RBD23P7G5DA' # Your Amazon S3 access key
+  sync.aws_secret_access_key = '9Z3csSXHjCnTf6kx2HxDoer29YyPRDzVojIeOvHA' # Your Amazon S3 access secret
   sync.existing_remote_files = 'keep' # What to do with your existing remote files? ( keep or delete )
   # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
   # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
 end
-
 
 
 ###
@@ -73,7 +72,7 @@ end
 
 # Site Settings
 @analytics_account = false
-@typekit_account = false
+@typekit_account = 'deu1taf'
 
 # Asset Settings
 set :css_dir, 'assets/css'
@@ -95,7 +94,7 @@ configure :build do
   activate :minify_javascript
 
   # Create favicon/touch icon set from source/favicon_base.png
-  activate :favicon_maker
+#  activate :favicon_maker
 
   # Enable cache buster
   # activate :cache_buster

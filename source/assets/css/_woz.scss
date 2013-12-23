@@ -1,4 +1,4 @@
-header.woz, footer.woz{
+header.woz{
   background: #24242a;
   color: white;
 
@@ -12,4 +12,62 @@ footer.woz{
   margin-top: 100px;
   padding-top: 6em;
   padding-bottom: 10em;
+  text-align: center;
+}
+
+
+h1, h2{ font-family: $font-family-display;}
+
+h1.title{
+	font-family: $font-family-display;
+	text-align: center;
+}
+
+#front-items{
+	h2{ font-size: 26px; text-align: center;}
+}
+
+
+@media(min-width: $screen-md-min){
+	h1{
+		font-size: 80px;		
+	}
+}
+
+.homepage{
+
+	.banner{
+		h1{ font-family: $font-family-display;}
+		h2{ font-family: $font-family-serif;}
+	}
+	
+
+	@media (min-width: $screen-md-min) {
+		.banner{
+			text-align: center;
+			margin-bottom: 4.2em;
+			
+/*			color: white;
+			text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+*/
+
+			h1{
+				font-size: 42px;
+			}
+			h2{
+				font-size: 90px;
+			}
+		}
+	}
+}
+
+
+.resume{
+	h3{
+		font-size: 22px; margin-bottom: 2px;
+	}
+	h5{
+		font-size: 18px; margin-top: 1px; 
+	}
+
 }

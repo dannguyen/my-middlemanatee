@@ -12,21 +12,14 @@ header class='woz'
 				
 				ul class="nav navbar-nav navbar-left"
 					li class=""
-						a class="navbar-brand" href="/" This is Manatee
+						a class="navbar-brand" href="/" Dan Nguyen
 
 				ul class="nav navbar-nav navbar-right"
-
-					li class="active"
-						a href="#" Link1
-					li 	
-						a href="#" Link2
+					= partial 'partials/content/site-nav'
 					li class="dropdown"
 						a href="#" class="dropdown-toggle" data-toggle="dropdown"
 							| External
 							b class="caret"
 						ul class="dropdown-menu"
-							li: a href="#" Blog
-							li: a href="#" Photos
-							li: a href="#" Twitter
-							li: a href="#" Bio
+							= partial 'partials/content/external-nav'
 

@@ -1,5 +1,5 @@
 def page_title
-  title = "MiddleManatee" #Set site title here
+  title = "Dan Nguyen Code/Words" #Set site title here
 
   if data.page.title
     title << " | " + data.page.title
@@ -29,3 +29,12 @@ def page_keywords
 end
 
 
+def friendly_date(val)
+  if val =~ /^\d+/
+    date = Chronic.parse(val)
+    
+    return date.strftime '%B %Y'
+  else
+    return val
+  end
+end

@@ -1,18 +1,15 @@
 footer class='woz'
   div class='container'
-    div class='row'
-      div class="col-md-6"
-        h4 About MiddleManatee
-        p 
-          | Made with
-          a< href="http://middlemanapp.com" Middleman App
 
-      div class="col-md-6"
-        p 
-          | Slapped together by
-          a< href="//danwin.com" Dan Nguyen
+    h4 Here
+    ul class="list-inline"
+      = partial "partials/content/site-nav"
 
+    h4 Elsewhere
+    ul class="list-inline"
+      = partial 'partials/content/external-nav'
 
+ 
 
 
 = javascript_include_tag "app", charset:"utf-8" 

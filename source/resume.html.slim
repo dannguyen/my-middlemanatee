@@ -1,0 +1,63 @@
+---
+title: Dan Nguyen
+layout: page
+---
+
+- resume = data.resume
+
+
+
+- meta = resume.meta
+
+div class="resume"
+  div class="meta"
+    address class="vcard"
+      p = meta.name
+      p Address
+      ul
+        - address = meta.address
+        li = address.street
+        li = address.city
+        li = address.state
+        li = address.postal
+
+
+
+  div class="sections"
+    - sections = resume.sections  
+    
+    section
+      - s = sections.employment
+
+      h2 Employment 
+      div class="row"
+        - s.items.each do |i|
+          div class='col-md-6'
+            div class="job"
+              h3 class="title" = i.title
+              h5 class="company" = i.company
+              div class="dates" #{{friendly_date i.dates.start}} to #{{friendly_date i.dates.end}}
+              ul class="points"
+                - i.points.andand.each do |point|
+                  li = point
+
+
+    - sections = resume.sections  
+    
+    section
+      - s = sections.skills
+
+      h2 Skills and Experience
+      - s.sections.each do |skill_sec|
+        section class="skill-group"
+          h3 = skill_sec.title
+          - skill_sec.items.each do |i|
+            div class="skill"
+              h5 class="title" = i.title
+              div class="desc" = i.desc
+
+
+
+
+
+
