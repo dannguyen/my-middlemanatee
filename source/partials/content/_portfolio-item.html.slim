@@ -1,12 +1,19 @@
 section class="work"
+  div class="imgwrap"
+    = image_tag("//placekitten.com/960/300")
   h2 class="title" = item.title
-
+  
 
   div class="row"
     div class="col-sm-8"
-      div class="meta"    
+      div class="meta"
+        - if item.deck
+          div class="deck" = item.deck 
         - if item.place
+          - if item.place.url
             => link_to item.place.name, item.place.url
+          - else
+            => item.place.name
         ' |
         - if item.date
             span =< friendly_date item.date
@@ -17,8 +24,9 @@ section class="work"
 
 
       div class="desc serif"
-        = make_markdown item.desc
-        = make_markdown lorem.paragraphs(3)
+        - arr = Array(item.desc)
+        - arr.each do |a_desc|
+          div = make_markdown a_desc
 
     div class="col-sm-4"
       div class="imgwrap"

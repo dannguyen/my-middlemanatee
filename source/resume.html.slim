@@ -34,7 +34,7 @@ div class="resume"
   div class="sections"
     - sections = resume.sections  
     
-    section
+    section class="employment"
       - s = sections.employment
 
       h2 Employment 
@@ -43,15 +43,16 @@ div class="resume"
           div class='col-md-6'
             div class="job"
               h3 class="title" = i.title
-              h5 class="company" = i.company
-              div class="dates" #{{friendly_date i.dates.start}} to #{{friendly_date i.dates.end}}
+              h5 class="company" 
+                strong => i.company
+                span class="dates" #{{friendly_date i.dates.start}} to #{{friendly_date i.dates.end}}
               div class="desc" = make_markdown(i.desc)
         
 
 
     - sections = resume.sections  
     
-    section
+    section class="skills"
       - s = sections.skills
 
       h2 Skills and Experience
@@ -59,17 +60,6 @@ div class="resume"
         div class="col-md-6"
           - skill_sec = s.sections.first
           section class="skill-group"
-          h3 
-            span class="#{{skill_sec.icon_class}}"
-            =< skill_sec.title
-          - skill_sec.items.each do |i|
-            div class="skill"
-              p 
-                strong class="title" => "#{i.title} &ndash;"
-                =< i.desc
-        div class="col-md-6"
-          - s.sections[1..-1].each do |skill_sec|
-            section class="skill-group"
             h3 
               span class="#{{skill_sec.icon_class}}"
               =< skill_sec.title
@@ -79,6 +69,45 @@ div class="resume"
                   strong class="title" => "#{i.title} &ndash;"
                   =< i.desc
 
+
+        div class="col-md-6"
+          - s.sections[1..-1].each do |skill_sec|
+            section class="skill-group"
+              h3 
+                span class="#{{skill_sec.icon_class}}"
+                =< skill_sec.title
+              - skill_sec.items.each do |i|
+                div class="skill"
+                  p 
+                    strong class="title" => "#{i.title} &ndash;"
+                    =< i.desc
+
+      section class="extra-matter"
+        div class="row"
+          div class="col-md-6"
+            - section = resume.sections.education
+            h3 Education
+            - section.items.each do |i|
+              div class="title" 
+                strong = i.title
+              div class="degrees" = i.degrees
+              div class="dates" #{{friendly_date i.dates.start}} to #{{friendly_date i.dates.end}}
+
+            - section = resume.sections.awards
+            h3 Awards
+            - section.items.each do |i|
+              div class="item"
+                = link_to i.name, i.url
+
+          div class="col-md-6"
+            - section = resume.sections.references
+            h3 References
+            - section.items.each do |i|
+              div class="item"
+                div class="name" 
+                  strong = i.name
+                div class="email" = mail_to i.email
+                div class="desc" = i.desc
 
 
 
