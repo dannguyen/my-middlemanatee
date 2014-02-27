@@ -1,0 +1,46 @@
+@media print {
+
+ 	a[href]:after {
+    content: none;
+  }
+
+	.hidden-print{
+		display: none;
+	}
+
+	body{
+		padding-top: 0 !important;
+		font-size: 14px;
+	}
+
+ 	header.woz, footer.woz{
+ 		display: none;
+ 	}
+
+ 	.resume{
+		font-size: 11px !important;
+		line-height: 1.2em !important;
+	  h1{ font-size: 18px; margin-bottom: 2px; line-height: 1.12em;}
+	  h2{ font-size: 17px; margin-bottom: 2px; line-height: 1.1em;}
+	  h3, h3.title, .job h3{ font-size: 15px !important;margin-bottom: 2px; line-height: 1.1em;}
+		h4, h5{ font-size: 14px !important; line-height: 1.1em !important;}
+
+		h1, h2, h3, h4, h5, h6{
+			margin-bottom: 2px;
+		}
+
+ 		.site-url{
+ 			font-weight: 400;
+ 		}
+ 		.meta, .meta ul{
+ 			text-align: left !important;
+			font-size: 12px;
+ 		}
+ 	}
+
+	.work{
+		page-break-after:always
+	}
+
+
+}

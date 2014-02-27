@@ -1,6 +1,13 @@
 works:
   - title: Dollars For Docs
     url: http://projects.propublica.org/docdollars
+    image_url: /assets/img/dollars-4-docs.jpg
+    highlights:
+      - title: Data-Scraping Guides for Journalists
+        url: http://www.propublica.org/nerds/item/doc-dollars-guides-collecting-the-data
+        desc: |
+          I wrote a series of how-to guides showing the major techniques and strategies I used
+          to collect the data. 
     place:
       name: ProPublica
       url: http://www.propublica.org
@@ -10,59 +17,58 @@ works:
       This is my most well-known investigative news project, thanks to the hundreds of news and medical organizations that used our data
       to produce their own reports, and of course, all the regular people curious about their own doctors. The popularity of Dollars for Docs 
       spurred numerous changes in the industry, including 
-      Eli Lily [creating an independent screening process for its hired speakers](http://www.propublica.org/article/pharma-payments-to-doctors-with-sanctions),
+      Eli Lily [creating an independent screening process for its hired speakers](http://www.propublica.org/article/pharma-payments-to-doctors-with-sanctions) and 
       medical schools [revising their conflict-of-interest policies](http://www.propublica.org/article/dollars-for-docs-sparks-policy-rewrite-at-colorado-teaching-hospitals).
       
 
-      One of the most gratifying aspects of D4D was that it started in my living room. I was at home writing a [blog post](http://danwin.com/2010/04/pfizer-web-scraping-for-journalists-part-4-pfizers-doctor-payments/)
-      about the practical day-to-day benefits of programming for journalists, 
+      One of the most satisfying aspects of D4D was how it started in my living room. I was writing a [blog post](http://danwin.com/2010/04/pfizer-web-scraping-for-journalists-part-4-pfizers-doctor-payments/)
+      about the practical benefits of programming for journalists, 
       when I came across a New York Times article about how Pfizer, which was forced to disclose 
-      its payments to doctors, had published their data in an inconveniently designed website, making it difficult to do even the most
-      rudimentary analysis.
+      its payments to doctors, had published their data in an inconveniently designed website. The site was servicable, but 
+      its structure made it difficult to do even the most rudimentary analysis.
 
-      I scraped Pfizer's listings and published the data and the code on my blog. Later that week, my colleague Charles Ornstein asked me
-      if it were possible to collect data for all the drug companies, and other reporters who had read my blog had also asked me for help, and
-      this is how ProPublica's biggest data project started.
+      So I scraped Pfizer's listings and published the data and the code on my blog. Later that week, my colleague Charles Ornstein asked me
+      if it were possible to collect data for all the drug companies, and this is how ProPublica's biggest data project started.
 
       Even with my colleagues Ornstein's and Tracy Weber's reporting expertise, I did not think the project would have a real impact. 
       The political momentum to impose transparency on the companies was already in place, due to reporting by [The Times](http://www.nytimes.com/2007/03/21/us/21drug.html?pagewanted=all&_r=0) and [medical researchers](http://jama.jamanetwork.com/article.aspx?articleid=206127) in 2007.
       However, I vastly underestimated the impact of making the data easy-to-find. Even if ProPublica was only revisiting the issue, 
-      I realized that a well-designed application could bring new angles to the story, through sheer magnitude and breadth of information.
+      I saw that a well-designed application could bring new angles to the story, through sheer magnitude and breadth of information.
 
       People almost always overestimate the technical sophistication behind Dollars for Docs, especially since I wasn't a great programmer back then.
       While it was time-consuming to collect the data and build 
       the website, the hardest parts were the most pedantic. Such as: how to efficiently and, most importantly,
       *accurately* fetch the data and pipe it to reporters, some of whom didn't know how to use spreadsheets. The biggest surprise for me of
-      Dollars for Docs was how great the need was for average reporters (and doctors) to better understand the nature of data. 
+      Dollars for Docs was how great and basic the need was for reporters (and doctors) to better understand the nature of data. 
       Not just how to process it in a technical way, but to fundamentally recognize its values (and limitations).
 
-      While reporting the project, I spoke with Dr. Joseph Ross, who was the first to report on the [state and implications of this data in 2007](http://jama.jamanetwork.com/article.aspx?articleid=206127).
+      While researching the project, I spoke with Dr. Joseph Ross, who was the first to report on the [state and implications of this data in 2007](http://jama.jamanetwork.com/article.aspx?articleid=206127).
       Dr. Ross told me that in Minnesota, this data had been public record but unexamined for nearly a decade, until he and his associates photocopied and
       hand-entered the records into Access. By the time I started my project, the data was by comparison trivially easy to gather and analyze.
-      That I was able to make a big project out of it taught me to never assume that when something is public, that it also has been looked at.
+      That I was able to make a big project out of it taught me to never assume that when something is public, that it also has been looked at.    
+  
+      I ended up [writing a series of in-depth technical guides explaining](http://www.propublica.org/nerds/item/doc-dollars-guides-collecting-the-data) how I wrangled the data together: 
 
+      * [Using Google Refine to Clean Messy Data](http://www.propublica.org/nerds/item/using-google-refine-for-data-cleaning)
+      * [Reading Data from Flash Sites](http://www.propublica.org/nerds/item/reading-flash-data)
+      * [Turning PDFs to Text](http://www.propublica.org/nerds/item/turning-pdfs-to-text-doc-dollars-guide)
+      * [Scraping Data from HTML](http://www.propublica.org/nerds/item/scraping-websites)
+      * [Getting Text Out of an Image-Only PDF](http://www.propublica.org/nerds/item/doc-dollars-guides-collecting-the-data)
 
-
-    image_url: //placekitten.com/400/600
-    highlights:
-      - title: Data-Scraping Guides for Journalists
-        url: http://www.propublica.org/nerds/item/doc-dollars-guides-collecting-the-data
-        desc: |
-          I wrote a series of how-to guides showing the major techniques and strategies I used
-          to collect the data. 
   - title: Small Data Journalism
     url: http://www.smalldatajournalism.com
     place:
       name: "New York University, SCPS"
       url: http://www.scps.nyu.edu/content/scps/academics/course_detail.html?id=WRIT1-CE9787
     date: 2013-09
-    deck: "A website built for my data journalism class for sharing lessons and resources with the rest of the community"
+    deck: "A website built for my data journalism class and for the rest of the community"
+    image_url: /assets/img/small-datajournalism.jpg
     desc: |
       I had always wanted to create a clearinghouse of data journalism resources, and so my data journalism class was a good
-      opportunity for it, as it also provided a place for me to distribute class assignments and information, rather than a 
-      tangle of email chains and the somewhat klunky university board system.
+      opportunity for it. The Small Data Journalism website also provided a convenient place for me to distribute class 
+      assignments and information, rather than manage the tangle of email chains and the somewhat clunky university board system.
 
-      I enjoyed teaching the class, though I underestimated the time it takes to even teach basic data principles, nevermind the journalism. I had 
+      I enjoyed teaching the class, though I underestimated the time it takes to even teach basic data concepts, nevermind the journalism. I had 
       already given up on teaching any programming, but even focusing strictly on how data is structured and the ways it can be aggregated and 
       summarized was more than enough. Most of the class time was spent on how to organize and publish data using spreadsheets and Google Fusion Tables, 
       but students seemed happy to get the practical and thorough experience.
@@ -70,41 +76,16 @@ works:
       My main goal for the class was that students get practical experience and familiarity with data, so that they *recognize*
       the many opportunities to examine data, and that would be incentive enough to experiment and further learn the tools and techniques.
 
-      To that end, I created several in-depth walkthroughs, including how to start with a basic dataset and perform join queries against
-      other datasets to produce an online interactive map. Students were able to use the detailed steps here for their final projects, which
-      required publishing a data project online.
 
-      One of the most popular parts of the site was my list of recommended readings. TK
+      Some highlights from the site:
 
-
-    image_url: //placekitten.com/400/680
-    highlights:
-      - title: Suggested Readings List
-        url: http://www.smalldatajournalism.com/readings/
-        desc: |
-          My favorite and most inspirational data related guides, quia nam porro veniam tempora quae atque quisquam vel quaerat saepe magnam a soluta ex fugiat repellat tenetur non!
-        image:
-          url: //placekitten.com/250/180
-      - title: Publishing a static website on Amazon S3
-        url: http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/
-        desc: |
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quasi, quam nam recusandae distinctio voluptas debitis facere. Vero, magni totam aspernatur ipsum ipsam accusantium nam dolore assumenda omnis quas neque.
-        image:
-          url: //placekitten.com/300/200
-      - title: Mashing and Mapping Data with Google Spreadsheets and Fusion Tables
-        url: http://www.smalldatajournalism.com/projects/one-offs/mapping-with-fusion-tables/
-        image:
-          url: //placekitten.com/300/200
-          width: 200
-        desc: |
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ab, consectetur tempore ducimus porro deleniti ratione voluptatum a aperiam possimus quam nulla id dolor quis reiciendis rem rerum veritatis molestias.
-      - title: Five Disciplines of Data Journalism
-        url: http://www.smalldatajournalism.com/about/
-        desc: |
-          Lorem amet, consectetur adipisicing elit. Beatae, quasi, quam nam recusandae 
+      * A [suggested readings list](http://www.smalldatajournalism.com/readings/) containing some of my favorite papers and articles on a broad array of data-related issues.
+      * Probably the most thorough and basic guide yet written [about using Google Fusion Tables to mash and map data](http://www.smalldatajournalism.com/projects/one-offs/mapping-with-fusion-tables/).
+      * A [short guide to publishing a static website on Amazon S3](http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/). We have a wide range of hosted platforms for web publishing, but I wanted my students to see what it was like to publish a page from scratch (sans setting up their own Apache server). An S3-like deployment is relatively easy and provides ample flexibility and speed. In fact, smalldatajournalism.com is hosted on S3.
+      * An introduction to the "[five disciplines of data journalism](http://www.smalldatajournalism.com/about/)." Not enough is done to distinguish the complex fields that data journalism encompasses, making the field seem too monolithic.      
   - title: Skift IQ
     deck: A dashboard that collects and analyzes the social media activity of the travel industry.
-    image_url: //placekitten.com/400/680
+    image_url: /assets/img/skift-iq-delta-airlines.png
     url: http://iq.skift.com
     place:
       name: Skift
@@ -132,22 +113,22 @@ works:
       name: ProPublica
       url: http://www.propublica.org
     date: 2012-01
-    image_url: //placekitten.com/400/630
+    image_url: /assets/img/sopa-screenshot.jpg
     deck: "Better transparency of government and politics through better interfaces"
     desc: |
-      SOPA Opera is not one of my most important projects, but it one of my sentimental favorites. Like Dollars for Docs, it
-      was something I created largely from my couch. The protests over the Stop Online Piracy Act were growing, but I was 
-      very annoyed to find that doing a Google search for a politican's name and "position on SOPA" usually turned up nothing.
+      SOPA Opera is not one of my most important projects, but it is one of my sentimental favorites. Like Dollars for Docs, it
+      was something I started from home. The debate over the Stop Online Piracy Act had been growing, but I was 
+      annoyed that doing a Google search for a politician's name and "position on SOPA" usually turned up nothing.
 
       This "there should be a list!" impulse has been at the heart of ProPublica's best news applications. [The Bailout Tracker](http://projects.propublica.org/bailout), 
-      my very first news app, originated from my colleage Paul Kiel writing down names of banks that had individually been announcing their
+      my very first news app, originated from my colleague Paul Kiel writing down names of banks that had individually been announcing their
       bailouts. So SOPA Opera was just a list of Congressmembers and what they think about SOPA. Of course, it's obvious why 
       this kind of site doesn't exist already: politicians don't need or desire to take a hard position on minor issues before a vote, and SOPA was 
-      almost certainly a niche topic.
+      most certainly a niche issue.
 
-      There are enough great open government APIs that make building a database of U.S. Congress activity 
-      easy. The most time-consuming part was researching each Congressmember's statements and reading through old news stories. I hadn't yet 
-      taught myself machine learning. But this kind of research, from what I can tell, will not be easily automated. However, I made the 
+      There are enough great open government APIs that make it easy to build a database of U.S. Congress activity. 
+      The most time-consuming part was researching each Congressmember's statements and reading through old news stories. I hadn't yet 
+      taught myself machine learning. But this kind of research, which requires a few judgment calls, cannot be easily automated. However, I made the 
       process as efficient as possible by setting up a Google Spreadsheet that I could fill in casually.
 
       After a week, I had gathered enough data to build the app. The front page showed a visual tally of my research, but 
@@ -155,7 +136,7 @@ works:
       And each Congressmember had a page, with the compiled research I had done (including votes and positions on past related bills) and 
       conveniently accessible contact information.
 
-      I published SOPA Opera on my own site and let it spread through word of mouth. Activists linked to the state pages, telling friends 
+      I published SOPA Opera on my own server and let it spread through word of mouth. Activists linked to the state pages, telling friends 
       to write their local legislators and demand answers. I soon ended up solving my own problem: whenever you Googled a Congressmember's name 
       and SOPA, you'd end up at my site. In the first week it came out, it had over 100,000 visitors and a congressional staff member had
       emailed me to let me know his boss opposed SOPA.
@@ -166,14 +147,14 @@ works:
 
       The most interesting lesson I learned was, yet again, the fundamental nature of our ability to just *know* things. The best feature
       of my site was that it put all the data &ndash; the positions of each Congressmember on SOPA &ndash; on one page. That simple compilation 
-      brought out revelations that should not have been "revelations". A common complaint I got was that there was no way that Sen. Al Franken 
-      would support SOPA. The tech crowd, in particular, believed that only Republicans could favor such a bill, and one reader even 
+      brought out revelations that should not have been "revelations". A common complaint I got was that [there was no way that Sen. Al Franken 
+      would ever support SOPA](http://projects.propublica.org/sopa/F000457.html). The tech crowd, in particular, believed that only Republicans could favor such a bill, and one reader even 
       wrote me repeatedly to accuse me of slandering Sen. Franken, even though *Franken is listed in the official records as a co-sponsor of the 
       SOPA's Senate version*. To me, it was always obvious this was not a Republican vs. Democratic issue, but for activists who were passionate
       about the topic, they had to see it on SOPA Opera to believe it. 
 
-      So SOPA Opera wasn't an important project, but it was a good exercise, and I've since been very interested how to make the 
-      issues and conflicts of our democracy more comprehensible and organized.
+      So SOPA Opera wasn't an important project, but it was a good exercise, and I've since been very interested in other ways to make the 
+      issues and debates of our democracy more comprehensible and organized.
 
 
 
@@ -183,7 +164,7 @@ works:
     place:
       name: Personal project
     date: 2011-12
-    image_url: //placekitten.com/400/630
+    image_url: /assets/img/ruby-bastardsbook.jpg
     deck: "A programming primer for counting and other unconventional tasks"
     desc: |
       The Dollars for Docs project grew out of [a simple blog post about programming and journalism](http://danwin.com/2010/04/pfizer-web-scraping-for-journalists-part-4-pfizers-doctor-payments/). And so after launching D4D, I more than
@@ -193,19 +174,23 @@ works:
 
       (*I named it "Bastards" to indicate that it's about "unconventional" uses, and the missing apostrophe is intentional*)
 
-      I obviously did not reach that goal, the reluctance to learn programming is still strong. Since I announced it, it's attracted more than 
+      Since I released the Ruby book, it has attracted more than 
       300,000 unique visitors and ranks highly in Google searches for "Ruby" in the context of practical use-cases, such as "web scraping" or "image manipulation" (I'm also apparently
-      the only person [who's thought to use Ruby to collect jail log data](http://ruby.bastardsbook.com/chapters/jail-logs-pcso/)). I've rarely updated the book since 
+      the only person [who has thought to use Ruby to collect jail log data](http://ruby.bastardsbook.com/chapters/jail-logs-pcso/)). I've rarely updated the book since 
       I released it, only doing so to correct blatant errors. The fact that my book still ranks so high is a sad statement of how few 
       programming resources there are that focus on the practical. As hard it is to convince non-technical journalisms that programming can 
       be worth their time, it's almost harder to convince programmers to think of code as an all-purpose tool for everyday use. 
 
       I still get frequent "thank you" notes, though. Some people have even claimed that by studying the book, they were able to learn enough
       programming to get a job. I've been meaning to update the book, but it's not out of lack of passion. The Ruby book was constructed through 
-      a needlessly complicated Rails app because, at that point, that's all I knew. I've since learned that having the proper publishing process is 
+      a needlessly complicated Rails app because that's all I knew. I've since learned that having the proper publishing process is 
       just as important as having the desire to write, because even just making corrections to the existing copy is a painful chore. Most of the 
       programming I've learned in the past couple of years has been simply to automate this kind of nuisance.
 
+      Last year, I started writing a spinoff guide: [The Bastards Book of Regular Expressions](http://regex.bastardsbook.com/). It was a 
+      good excuse to try other publishing platforms and formats, as I've gotten many requests to turn the Ruby book into a PDF. My main 
+      goal, however, was to promote the use of regular expressions, which, despite their unexciting name, is probably the one tool, other than the common spreadsheet, 
+      that would save data journalists the most time on a day-to-day basis.
 
   - title: Bastards Book of Photography
     url: http://photography.bastardsbook.com/
@@ -213,7 +198,7 @@ works:
       name: Personal project
     date: 2012-06
     deck: "An open-source guide to working with light"
-    image_url: //placekitten.com/400/630
+    image_url: /assets/img/photography-bastardsbook.jpg
     desc: |
       Before I left the Sacramento Bee for ProPublica, my time in the multimedia department inspired me to want to be a 
       photojournalist. Unfortunately, being a web developer did not leave me much time in the day to take photos, so I put that career 
@@ -221,14 +206,16 @@ works:
       DSLR everyday to work in the off-chance I'd take an interesting photo. During the recession, I would even take up unemployed actors 
       who were asking on Craigslist for free portrait work, as I needed the practice. 
 
-      I've built a [decent following on Flickr](http://www.flickr.com/photos/zokuga/sets/72157622929837117/), and many of my photos have been used in or on books and perodicals, since I offer them via a 
-      Creative Commons license. Even though photography isn't a career, it's been extremely useful to me in my general work. I've learned how important 
-      process is &ndash; i.e. learning to use Lightroom efficiently &ndash; is for consistently publishing good work. Most people mistake me for a 
-      good photographer when it's simply I take a lot of photos, and know how to find the best ones later on. Also, taking my own photos has given me my
-      own supply of art for my web projects and image processing scripts.
+      I've built a [decent following on Flickr](http://www.flickr.com/photos/zokuga/sets/72157622929837117/), and many of my photos have been printed in 
+       books and periodicals, since I offer them via a 
+      Creative Commons license. Even though photography isn't a career, it's been extremely useful to me in my general work. I've learned how essential 
+      process is &ndash; i.e. learning to use Lightroom efficiently &ndash; for consistently publishing good work. Many people mistake me for a 
+      better photographer than I am. My success comes from taking a lot of photos, and then quickly finding the best ones to publish without it 
+      sucking my time. Also, taking my own photos has given me my
+      own supply of art for my web projects and image processing programs.
 
       The Bastards Book of Photography was a fun side project to use up some inventory and teach people to approach photography as both an art and 
       an intellectual challenge. Taking the best photo with a given set of camera equipment and lighting conditions 
-      requires as much logic, common-sense, and curiousity as it takes to solve any programming problem.
+      requires as much logic, common-sense, and curiosity as it takes to solve any programming problem.
 
 

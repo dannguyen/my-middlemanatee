@@ -7,26 +7,64 @@ layout: :home
 section id="front-items"
 	div class="row"
 
-		div class="col-xs-4 col-xs-offset-2 fade-item" data-href="/portfolio"
+		div class="col-sm-4 col-sm-offset-2 fade-item" data-href="/portfolio"
 			div class="well item"
 				h2: a href="/portfolio" Portfolio
-				p These projects reflect the work that has either had the most impact or best displays my
-					skills and talents.
-		div class="col-xs-4 fade-item" data-href="/resume"
+		
+		div class="col-sm-4 fade-item" data-href="/resume"
 			div class="well item"
 				h2: a href="/resume" Resumé
-				p My works and other thoughts Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				  | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-
+	
 
 section
-	h2 In Brief
-	p My main work is in journalism. I'm currently Head of Data at Skift, where I head both application development and 
-		data research. Previously, I was an application developer at ProPublica, a reporter at Sacramento Bee. I've taught
-		numerous data journalism skills including a Data Journalism class for New York University's digital journalism certificate
-		program. Main skills include Ruby on Rails, relational database programming, front-end Javascript, engineering.
 
-	h5 Technical notes
-	p This portfolio site was built using the Middleman framework, a lightweight static site generator in Ruby. This means
-		it's just plain HTML, CSS, and JS files uploaded to Amazon's S3 service, which makes it easy to maintain and
-		fast. I've also
+	div class="row"
+		div class="col-sm-4"
+			div class="imgwrap"
+				= image_tag '/assets/img/photo-dan.jpg'
+
+		div class="col-sm-8"
+			h2 style="margin-top:0" About Dan
+			p I am a data journalist, programmer, and photographer. I'm currently Head of Data at #{link_to "Skift", "//skift.com"}, where I lead both application development and 
+				data research. Previously, I was a #{link_to "news application developer at ProPublica", "http://www.propublica.org/site/author/dan_nguyen"} and a reporter at the #{link_to "Sacramento Bee", "//sacbee.com"}. 
+				I've taught numerous workshops on programming and data, including 
+				#{link_to "Data Journalism at NYU-SCPS", "//smalldatajournalism.com"}, and have
+				self-published a series of 
+			  #{link_to "popular", "http://photography.bastardsbook.com/"}  
+				#{link_to "online books", "http://ruby.bastardsbook.com/"}.
+			
+
+			h4 Technical notes
+			p I built this portfolio site using the #{link_to "Middleman framework", "//middlemanapp.com"}, a static site generator in Ruby. 
+				So it's just plain HTML, CSS, and JS files #{link_to "hosted on Amazon's S3 service", "http://www.smalldatajournalism.com/projects/one-offs/using-amazon-s3/"}, 
+				which makes it easy to maintain and fast to load. 
+
+section
+	h3 Other Places
+
+	div class="col-sm-4"
+		h4 class="title" 
+			a href="//danwin.com" Danwin.com
+		p I've kept my own blog for about 5 years now. My proudest achievement is, for a time, beating the more famous and #{{link_to "musically-talented Dan Nguyen in Google search", "https://www.google.com/search?q=dan+nguyen"}}  results.
+
+	div class="col-sm-4"
+		h4 class="title" 
+			a href="//flickr.com/photos/zokuga/" Flickr
+		p I'm lucky to live in New York, in which #{{link_to "events such as snow falling", "http://www.flickr.com/photos/zokuga/4204160273"}} become immediately interesting just because they happened in New York.
+
+	div class="col-sm-4"
+		h4 class="title" 
+			a href="//tumblr.eyeheartnewyork.com/" Eye Heart New York
+		p This is my attempt at understanding how Tumblr works. It has a decent following from me funneling my Flickr photos into it, but I still don't quite understand Tumblr.	
+
+	div class="col-sm-4"
+		h4 class="title" 
+			a href="//twitter.com/dancow" @dancow
+		p I have a large international following of people mistaking me for #{{link_to "a popular Nestle drink in Indonesia", "http://www.dancow.co.id/"}}.			
+
+	div class="col-sm-4"
+		h4 class="title" 
+			a href="//github.com/dannguyen" Github
+		p Most of my repos are private and involve company work. I use github mostly to store half-finished utilities that work for my own purposes but probably aren't convenient for others to use.		
+
+

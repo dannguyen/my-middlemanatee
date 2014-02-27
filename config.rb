@@ -85,7 +85,7 @@ end
 # end
 
 # Site Settings
-@analytics_account = false
+@analytics_account = 'UA-8916875-1'
 @typekit_account = 'deu1taf'
 
 # Asset Settings

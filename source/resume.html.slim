@@ -3,31 +3,35 @@ title: Dan Nguyen
 layout: page
 ---
 
+
+
 - resume = data.resume
-
-
-
 - meta = resume.meta
 
 div class="resume"
+
   div class="meta"
+    div class="site-url visible-print"
+      = link_to meta.site_url, meta.site_url
+
     address class="vcard"
+
       - address = meta.address
-      ul class="list-unstyled list-inline list-iconized"
-        li class="address"
-          span class="fa fa-envelope"
-          => [address.street, address.city, address.state, address.postal].join(', ')
-        li class="phone"
-          span class="fa fa-phone"
-          => meta.phone
+      / ul class="list-unstyled list-inline list-iconized"
+        / li class="address"
+        /   span class="fa fa-envelope"
+        /   => [address.street, address.city, address.state, address.postal].join(', ')
+        / li class="phone"
+        /   span class="fa fa-phone"
+        /   => meta.phone
       ul class="list-unstyled list-inline list-iconized"
         li class="email" 
-          span class="fa fa-inbox"
+          span class="fa fa-inbox hidden-print"
           => link_to meta.email, "mailto:#{meta.email}"
         li class="twitter"
-          span class=" fa fa-twitter"
+          span class=" fa fa-twitter hidden-print"
           => link_to "@#{meta.twitter}", "//twitter.com/#{meta.twitter}"
-        li class="homepage" 
+        li class="homepage hidden-print" 
           span class="fa fa-rss"
           => link_to 'danwin.com', meta.url
 
@@ -40,7 +44,7 @@ div class="resume"
       h2 Employment 
       div class="row"
         - s.items.each do |i|
-          div class='col-md-6'
+          div class='col-sm-6'
             div class="job"
               h3 class="title" = i.title
               h5 class="company" 
@@ -57,7 +61,7 @@ div class="resume"
 
       h2 Skills and Experience
       div class="row"
-        div class="col-md-6"
+        div class="col-sm-6"
           - skill_sec = s.sections.first
           section class="skill-group"
             h3 
@@ -70,7 +74,7 @@ div class="resume"
                   =< i.desc
 
 
-        div class="col-md-6"
+        div class="col-sm-6"
           - s.sections[1..-1].each do |skill_sec|
             section class="skill-group"
               h3 
@@ -84,7 +88,7 @@ div class="resume"
 
       section class="extra-matter"
         div class="row"
-          div class="col-md-6"
+          div class="col-sm-6"
             - section = resume.sections.education
             h3 Education
             - section.items.each do |i|
@@ -99,15 +103,15 @@ div class="resume"
               div class="item"
                 = link_to i.name, i.url
 
-          div class="col-md-6"
-            - section = resume.sections.references
-            h3 References
-            - section.items.each do |i|
-              div class="item"
-                div class="name" 
-                  strong = i.name
-                div class="email" = mail_to i.email
-                div class="desc" = i.desc
+          / div class="col-sm-6"
+          /   - section = resume.sections.references
+          /   h3 References
+          /   - section.items.each do |i|
+          /     div class="item"
+          /       div class="name" 
+          /         strong = i.name
+          /       div class="email" = mail_to i.email
+          /       div class="desc" = i.desc
 
 
 

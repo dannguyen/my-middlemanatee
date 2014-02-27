@@ -1,7 +1,8 @@
 meta:
   name: Dan Nguyen
   email: dan@danwin.com
-  url: http://a.danwin.com
+  site_url: http://a.danwin.com
+  url: http://danwin.com
   twitter: dancow
   address:
     street: 343 E 9th Street Apt. 4
@@ -20,9 +21,9 @@ sections:
             start: 2012-09
             end: Present
           desc: |
-            My role is to conceive and develop data products, including applications for business users and
+            My role is to invent and build data products, including applications for business users and
             data tools for internal research. I am the primary programmer but have also hired two developers 
-            and am responsible for making decisions on our technology stack and best practices.
+            and am responsible for making decisions about our technology stack and best practices.
         - title: Adjunct Instructor in Data Journalism
           company: "New York University, School of Continuing and Professional Studies"
           dates:
@@ -31,25 +32,20 @@ sections:
           desc: |
             I taught NYU-SCPS's first data journalism class to a small group of students without strong
             technical backgrounds. We focused on storytelling and reporting techniques specific to data, and
-            thorough hands-on experience with data tools. I also [built a website to easily](http://www.smalldatajournalism.com) share data, tutorials, and extra readings.
-          points:
-            - Led first data journalism class in the Humanities department for J certificate
-            - Created class website that was used by journalists etc worldwide
-            - Created walkthroughs
-            - Taught data principles including cleaning visualizations etc
+            thorough hands-on experience with data tools. I also [built a website to easily](http://www.smalldatajournalism.com) share data, tutorials, and readings.
         - title: News Application Developer
           company: ProPublica
           dates:
             start: 2008-08
             end: 2012-09
           desc: |
-            I was ProPublica's first "news apps" developer and did the primary programming and design for its most
+            I was ProPublica's first "news apps" developer and led the programming and design for its most
             well-known online projects, including [Dollars for Docs](//projects.propbulica.org/docdollars), [SOPA Opera](//projects.propublica.org/sopa),
-            and the [Bailout Tracker](//projects.propublica.org/bailout)
+            and the [Bailout Tracker](//projects.propublica.org/bailout).
         - title: Reporter and Developer
           company: The Sacramento Bee
           desc: | 
-            My roles included beat reporting on education and local government, helping to create the Bee's new online multimedia department, producing interactive features in Flash, and computer-assisted reporting for the investigative projects team.
+            I started as a beat reporter for education and local government and later helped create the Bee's new online multimedia department. I produced interactive features in Flash and did computer-assisted reporting for the investigative projects team.
           dates:
             start: 2005-06
             end: 2008-07
@@ -65,24 +61,24 @@ sections:
             - title: Ruby
               desc: |
                   The Ruby language is my workhorse scripting language, for both full-fledged applications and impromptu 
-                  utility scripts, often to glue together scripts from more specialized languages, such as R and SQL.
+                  utility scripts. I often use Ruby as a glue between scripts from more specialized languages, such as R and SQL.
             - title: Ruby on Rails
               desc: | 
                   This is my primary web framework, which I've used to build award-winning in-depth news projects that can handle
-                  traffic from millions of users.
+                  traffic from millions of users. I've also built apps using the more minimalist Sinatra and Padrino frameworks.
             - title: Databases
               desc: | 
-                  My main production database languages are MySQL and SQLite, which I use for both the datastores for web applications 
-                  and for large data-mining operations and analyses.
+                  My main production database languages are MySQL and SQLite, which I use as data stores for both web applications 
+                  and large data-mining operations and analyses. I've also used MongoDB for web applications.
             - title: JavaScript
               desc: |
-                  Most of my JS work is in user-interaction and visualizations, using libraries such as jQuery, D3, and Highcharts. I also
+                  Most of my JS work is in user-interface features and visualizations with libraries such as jQuery, D3, and Highcharts. I also
                   have some experience with client-heavy frameworks such as AngularJS.
             - title: Code and project management
               desc: | 
-                  I use git daily for tracking personal and for managing professional team projects, and 
+                  I use git daily for tracking personal and for managing professional team projects and I 
                   regularly contribute to Github open-source repositories. I have extensive experience in 
-                  test-driven devleopment, particularly with the RSpec and Jasmine libraries.
+                  test-driven development, particularly with the RSpec and Jasmine libraries.
             - title: System Operations
               desc: | 
                   I've deployed, secured, and maintained web sites both on hosted platforms and custom cloud servers, including Heroku
@@ -95,15 +91,15 @@ sections:
           items:
             - title: HTML
               desc: | 
-                  I almost always build the front-ends to my web projects, and I frequently use 
-                  popular frameworks such as Bootstrap and Zerb, as well as alternative markup languages, e.g. Haml, Slim, and Markdown.
+                  I almost always build the front-ends to my web projects, often using 
+                  popular frameworks such as Bootstrap and Zerb. I also use alternative markup languages, such as Haml, Slim, and Markdown.
             - title: CSS
               desc: | 
-                  In addition to using the latest CSS standards and building responsive layouts (when needed), I use extension frameworks such as Sass/Compass and LESS for 
-                  production work.
+                  In addition to using the latest CSS standards and building responsive layouts (when needed), I use extension frameworks 
+                  such as Sass/Compass and LESS for production work.
             - title: Photography
               desc: | 
-                  I do photography for leisure and side jobs, including for news stories, sports events, weddings, and NY Fashion Week events. Have also published online how-to guides.
+                  I do photography as a hobby and for occasional side jobs, including news stories, sports events, weddings, and NY Fashion Week events. Have also published online how-to guides.
             - title: Photo Editing
               desc: | 
                   I have more than a decade's worth of experience in using photo editing and processing software, particularly Adobe's
@@ -123,18 +119,11 @@ sections:
             - title: Data and Tech Skills
               desc: |
                   I've taught data tool workshops to general journalism audiences, including
-                  at National Institute of Computer-Assisted Reporting confernces and the International Journalism Festival in Perugia, Italy.
+                  at National Institute of Computer-Assisted Reporting conferences and the International Journalism Festival in Perugia, Italy.
             - title: Photography
               desc: |
-                  I wrote, photographed, and published the Bastards Book of Photography, an online primer of basic photography skills 
-                  for manual camera owners.
-    teaching:
-      title: Teaching Experience
-      items:
-        - Ruby programming classes at General Assembly and Online News Association
-        - Data Journalism at NYU-SCPS
-        - General data concepts and technical lessons with National Institute of Computer Assisted Reporters
-        - 'The "Bastards Books of Ruby, Photography and Regular Expressions" online, indepth guides that have been visited by hundreds of thousands of readers.'
+                  I wrote, photographed, and published the Bastards Book of Photography, an online primer of basic manual photography skills.
+                  
     education:
       title: Education
       items:

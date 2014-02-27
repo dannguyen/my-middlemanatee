@@ -32,6 +32,12 @@ def make_markdown(str)
   Kramdown::Document.new(str.to_s).to_html
 end
 
+def image_tag_var(sizename, fstr, *args)
+  n = fstr.sub(/(?=\.\w+$)/, ".#{sizename}")
+
+  image_tag(n, *args)
+end
+
 def friendly_date(val)
   if val =~ /^\d+/
     date = Chronic.parse(val)

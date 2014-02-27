@@ -1,6 +1,6 @@
 section class="work"
   div class="imgwrap"
-    = image_tag("//placekitten.com/960/300")
+    = image_tag_var 'header',  item.image_url
   h2 class="title" = item.title
   
 
@@ -30,22 +30,22 @@ section class="work"
 
     div class="col-sm-4"
       div class="imgwrap"
-        = image_tag item.image_url
+        = image_tag_var 'small', item.image_url
 
-  - if item.highlights
+  / - if item.highlights
 
-    div class='highlights'
-      h3 Highlights
-      div class="row isotoper"
-        - item.highlights.each do |highlight|      
-          div class="col-sm-6"
-            div class="item"
-              h4 = link_to highlight.title, highlight.url
-              - if image = highlight.image
-                div class="fRight" style="#{"width: #{image.width}" if image.width}"
-                  div class="imgwrap"
-                    = image_tag highlight.image.url
-              div                    
-                = make_markdown highlight.desc
+  /   div class='highlights'
+  /     h3 Highlights
+  /     div class="row isotoper"
+  /       - item.highlights.each do |highlight|      
+  /         div class="col-sm-6"
+  /           div class="item"
+  /             h4 = link_to highlight.title, highlight.url
+  /             - if image = highlight.image
+  /               div class="fRight" style="#{"width: #{image.width}" if image.width}"
+  /                 div class="imgwrap"
+  /                   = image_tag highlight.image.url
+  /             div                    
+  /               = make_markdown highlight.desc
 
               
